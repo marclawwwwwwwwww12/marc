@@ -1,0 +1,19 @@
+class Employee:
+    def __init__(self, name, position, salary):
+        self.name = name
+        self.position = position
+        self.salary = salary
+
+    def give_raise(self, amount):
+        self.salary += amount
+        print(f"Gave a raise of {amount}. New salary is {self.salary}.")
+
+    def display_employee(self):
+        print(f"Employee: {self.name}, Position: {self.position}, Salary: {self.salary}")
+
+# Creating an employee
+employee = Employee("John Smith", "Software Engineer", 70000)
+
+# Giving a raise and displaying their details
+employee.give_raise(5000)
+employee.display_employee()
